@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflow Description</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 p-6 font-sans">
+  <div class="w-full flex justify-center px-4">
+    <h1 class="text-3xl font-bold mb-6 text-center">People Table</h1>
+    <div class="w-4/5 overflow-x-auto shadow rounded-lg">
+
+      <div class="mb-4 flex flex-wrap gap-4 text-sm">
+  <div class="flex items-center gap-2">
+    <div class="w-4 h-4 bg-red-100 border border-red-300 rounded"></div>
+    <span>Mandatory</span>
+  </div>
+  <div class="flex items-center gap-2">
+    <div class="w-4 h-4 bg-orange-100 border border-orange-300 rounded"></div>
+    <span>Optional</span>
+  </div>
+  <div class="flex items-center gap-2">
+    <div class="w-4 h-4 bg-green-100 border border-green-300 rounded"></div>
+    <span>Automatic</span>
+  </div>
+  <div class="flex items-center gap-2">
+    <div class="w-4 h-4 bg-gray-50 border border-gray-300 rounded"></div>
+    <span>Default / Unspecified</span>
+  </div>
+</div>
+      <table class="w-full table-auto bg-white border border-gray-300 text-sm text-left">
+        <thead class="bg-gray-100 text-gray-700 uppercase">
+          <tr>
+            <th class="px-4 py-3 border-b">Label</th>
+            <th class="px-4 py-3 border-b">Cardinality</th>
+            <th class="px-4 py-3 border-b">Type</th>
+            <th class="px-4 py-3 border-b">Description</th>
+            <th class="px-4 py-3 border-b">Example</th>
+          </tr>
+        </thead>
+        <tbody id="peopleTable" class="divide-y divide-gray-200">
+          <!-- Data rows will be injected here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    fetch('workflow_description.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.getElementById("peopleTable");
+        data.forEach(person => {
+          let rowColor = "bg-gray-50";
+          switch (person.required) {
+            case "mandatory":
+              rowColor = "bg-red-100 hover:bg-red-300";
+              break;
+            case "optional":
+              rowColor = "bg-orange-100 hover:bg-orange-200";
+              break;
+            case "automatic":
+              rowColor = "bg-green-100 hover:bg-green-200";
+              break;
+        }
+          const row = `
+            <tr class="${rowColor}">
+              <td class="px-4 py-2 border-b">${person["label (source)"]}</td>
+              <td class="px-4 py-2 border-b">${person.cardinality}</td>
+              <td class="px-4 py-2 border-b">${person.type}</td>
+              <td class="px-4 py-2 border-b">${person.description}</td>
+              <td class="px-4 py-2 border-b">${person.example}</td>
+            </tr>`;
+          tbody.innerHTML += row;
+        });
+      });
+  </script>
+</body>
+</html>
