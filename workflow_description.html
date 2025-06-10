@@ -37,6 +37,7 @@
             <th class="px-4 py-3 border-b">Type</th>
             <th class="px-4 py-3 border-b">Description</th>
             <th class="px-4 py-3 border-b">Example</th>
+            <th class="px-4 py-3 border-b">CFF</th>
           </tr>
         </thead>
         <tbody id="peopleTable" class="divide-y divide-gray-200">
@@ -71,6 +72,7 @@
               <td class="px-4 py-2 border-b">${person.type}</td>
               <td class="px-4 py-2 border-b">${person.description}</td>
               <td class="px-4 py-2 border-b">${person.example}</td>
+              <td class="px-4 py-2 border-b">${person.type}</td>
             </tr>`;
           tbody.innerHTML += row;
         });
