@@ -16,7 +16,7 @@
     "description": "A static data store in which the resource has been deposited, e.g. Zenodo, Figshare, HAL. Often a snapshot of the resource in a repository (dynamic data store) at a given point in time.\u00a0 SHOULD use the DOI.",
     "example": "https://zenodo.org/records/4555755",
     "required": "optional",
-    "cff": false,
+    "cff": "doi",
     "ro-crate": false
   },
   {
@@ -26,7 +26,7 @@
     "description": "A bibliographic reference for the resource.\u00a0 MUST use APA style.",
     "example": "Magee, E.; Huxley, D.; Tso, C.-.M. (2023). Random forest model to predict long-term seasonal nitrate and orthophosphate concentrations in British river reaches. NERC EDS Environmental Information Data Centre. https://doi.org/10.5285/ba208b6c-6f1a-43b1-867d-bc1adaff6445",
     "required": "automatic",
-    "cff": false,
+    "cff": "preferred-citation",
     "ro-crate": false
   },
   {
@@ -46,7 +46,7 @@
     "description": "Relevant contact information for the cataloged resource.\u00a0 SHOULD use an ORCID for people and a ROR ID for organisations.",
     "example": "https://ror.org/00pggkr55",
     "required": "mandatory",
-    "cff": false,
+    "cff": "contact",
     "ro-crate": false
   },
   {
@@ -56,7 +56,7 @@
     "description": "An entity responsible for making contributions to the resource.\u00a0 SHOULD use an ORCID for people and a ROR ID for organisations.",
     "example": "https://orcid.org/0000-0002-6540-8547",
     "required": "optional",
-    "cff": false,
+    "cff": "authors",
     "ro-crate": false
   },
   {
@@ -66,7 +66,7 @@
     "description": "The entity responsible for producing the resource.\u00a0 SHOULD use an ORCID for people and a ROR ID for organisations.",
     "example": "https://orcid.org/0000-0002-6540-8547",
     "required": "optional",
-    "cff": false,
+    "cff": "authors",
     "ro-crate": false
   },
   {
@@ -86,7 +86,7 @@
     "description": "A web app demo, visualisation, tutorial, etc. that makes use of the resource.\u00a0\u00a0",
     "example": "https://moisture-wqmlviewer.datalabs.ceh.ac.uk/wqml_viewer",
     "required": "optional",
-    "cff": false,
+    "cff": "url",
     "ro-crate": false
   },
   {
@@ -96,7 +96,7 @@
     "description": "A free-text account of the resource.\u00a0\u00a0",
     "example": "This R application is an implementation of state tagging approach for improved quality assurance of environmental data. The application returns state-dependent prediction intervals on input data. The states are determined based on clustering of auxiliary inputs (such as meteorological data) made on the same day. The method provides contextual information to assess the quality of observational data and is applicable to any point-based, daily time series observational data.",
     "required": "mandatory",
-    "cff": false,
+    "cff": "abstract",
     "ro-crate": false
   },
   {
@@ -146,7 +146,7 @@
     "description": "A unique identifier of the resource being described or cataloged.\u00a0\u00a0",
     "example": "https://doi.org/10.5285/44c577d3-665f-40de-adce-74ecad7b304a",
     "required": "automatic",
-    "cff": false,
+    "cff": "doi",
     "ro-crate": false
   },
   {
@@ -166,7 +166,7 @@
     "description": "A keyword or tag describing the resource.\u00a0\u00a0",
     "example": "",
     "required": "optional",
-    "cff": false,
+    "cff": "keywords",
     "ro-crate": false
   },
   {
@@ -176,7 +176,7 @@
     "description": "A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.\u00a0\u00a0",
     "example": "https://catalogue.ceh.ac.uk/documents/ba208b6c-6f1a-43b1-867d-bc1adaff6445",
     "required": "automatic",
-    "cff": false,
+    "cff": "url",
     "ro-crate": false
   },
   {
@@ -196,7 +196,7 @@
     "description": "A legal document under which the resource is made available.\u00a0 SHOULD use a term from the SPDX License List.",
     "example": "https://spdx.org/licenses/OGL-UK-3.0.ttl",
     "required": "mandatory",
-    "cff": false,
+    "cff": "license",
     "ro-crate": false
   },
   {
@@ -226,7 +226,7 @@
     "description": "Date of formal issuance (e.g., publication) of the resource. This property SHOULD be set using the first known date of issuance. If embargoed, MUST use date when metadata record was put online and MUST NOT use embargo end date. MUST use the form YYYY-MM-DD.",
     "example": "2025-05-19",
     "required": "automatic",
-    "cff": false,
+    "cff": "date-released",
     "ro-crate": false
   },
   {
@@ -276,7 +276,7 @@
     "description": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead.\u00a0\u00a0",
     "example": "\u00a9 UK Centre for Ecology & Hydrology",
     "required": "optional",
-    "cff": false,
+    "cff": "reference.copyright",
     "ro-crate": false
   },
   {
@@ -366,7 +366,7 @@
     "description": "A name given to the resource.\u00a0\u00a0",
     "example": "State tagging application for environmental data quality assurance",
     "required": "mandatory",
-    "cff": false,
+    "cff": "title",
     "ro-crate": false
   },
   {
@@ -386,7 +386,7 @@
     "description": "The nature or genre of the resource.\u00a0\u00a0",
     "example": "",
     "required": "optional",
-    "cff": false,
+      "cff": "type (enum software/dataset)",
     "ro-crate": false
   },
   {
@@ -406,7 +406,7 @@
     "description": "The version indicator (name or identifier) of a resource.\u00a0 SHOULD use the SemVer or SchemaVer form.",
     "example": "0.0.1",
     "required": "mandatory",
-    "cff": false,
+    "cff": "version",
     "ro-crate": false
   },
   {
