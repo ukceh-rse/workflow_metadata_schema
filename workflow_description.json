@@ -457,7 +457,7 @@
     "example": "Argo",
     "required": "optional",
     "cff": "",
-    "ro-crate": false
+      "ro-crate": "process_run, SoftwareApplication"
   },
   {
     "label (source)": "has part",
@@ -477,7 +477,7 @@
     "example": "CSV",
     "required": "optional",
     "cff": "",
-    "ro-crate": false
+      "ro-crate": "process_run, Dataset"
   },
   {
     "label (source)": "output (file format/parameter type)",
@@ -497,7 +497,7 @@
     "example": "Python 3.0.0",
     "required": "optional",
     "cff": "",
-    "ro-crate": false
+      "ro-crate": "process_run, SoftwareApplication"
   },
   {
     "label (source)": "hardware requirement",
