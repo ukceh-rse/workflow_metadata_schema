@@ -8,7 +8,7 @@
     "required": "mandatory",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "archive URL",
@@ -19,7 +19,7 @@
     "required": "optional",
     "cff": "doi",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "bibliographic citation",
@@ -30,7 +30,7 @@
     "required": "automatic",
     "cff": "preferred-citation",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "conforms to",
@@ -41,7 +41,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "contact point",
@@ -52,7 +52,7 @@
     "required": "mandatory",
     "cff": "contact",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "contributor*",
@@ -63,7 +63,7 @@
     "required": "optional",
     "cff": "authors",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "creator*",
@@ -74,7 +74,7 @@
     "required": "optional",
     "cff": "authors",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "date available",
@@ -85,7 +85,7 @@
     "required": "mandatory",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "demo URL",
@@ -96,7 +96,7 @@
     "required": "optional",
     "cff": "url",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "description",
@@ -107,7 +107,7 @@
     "required": "mandatory",
     "cff": "abstract",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "distribution",
@@ -118,7 +118,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "has current owner",
@@ -129,7 +129,7 @@
     "required": "mandatory",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "has custodian",
@@ -140,7 +140,7 @@
     "required": "mandatory",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "has spatial reference system",
@@ -151,7 +151,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "identifier",
@@ -162,7 +162,7 @@
     "required": "automatic",
     "cff": "doi",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "is referenced by",
@@ -173,7 +173,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "keyword/tag",
@@ -184,7 +184,7 @@
     "required": "optional",
     "cff": "keywords",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "landing page",
@@ -195,7 +195,7 @@
     "required": "automatic",
     "cff": "url",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "language",
@@ -206,7 +206,7 @@
     "required": "mandatory",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "license",
@@ -217,7 +217,7 @@
     "required": "mandatory",
     "cff": "license",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "previous version",
@@ -228,7 +228,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "publisher",
@@ -239,7 +239,7 @@
     "required": "automatic",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "release date",
@@ -250,7 +250,7 @@
     "required": "automatic",
     "cff": "date-released",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "replaces",
@@ -261,7 +261,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "repository URL",
@@ -272,7 +272,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "copyright holder",
@@ -283,7 +283,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "copyright statement",
@@ -294,7 +294,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "copyright notice",
@@ -305,7 +305,7 @@
     "required": "optional",
     "cff": "reference.copyright",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "copyright year",
@@ -316,7 +316,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "spatial representation type",
@@ -327,7 +327,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "spatial resolution",
@@ -338,7 +338,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "spatial/geographical coverage",
@@ -349,7 +349,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "status",
@@ -360,7 +360,7 @@
     "required": "automatic",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "temporal coverage",
@@ -371,7 +371,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "temporal resolution",
@@ -382,7 +382,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "theme/category",
@@ -393,7 +393,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "title",
@@ -404,7 +404,7 @@
     "required": "mandatory",
     "cff": "title",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "topic category",
@@ -415,7 +415,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "type/genre",
@@ -426,7 +426,7 @@
     "required": "optional",
     "cff": "type (enum software/dataset)",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "update/modification date",
@@ -437,7 +437,7 @@
     "required": "automatic",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "version",
@@ -448,7 +448,7 @@
     "required": "mandatory",
     "cff": "version",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "version notes",
@@ -459,7 +459,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "was derived from",
@@ -470,7 +470,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "was generated by",
@@ -481,7 +481,7 @@
     "required": "automatic",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "was influenced by",
@@ -492,7 +492,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "workflow format",
@@ -503,7 +503,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "process_run, SoftwareApplication",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "has part",
@@ -514,7 +514,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "input (file format/parameter type)",
@@ -525,7 +525,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "process_run, Dataset",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "output (file format/parameter type)",
@@ -536,7 +536,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "software dependency",
@@ -547,7 +547,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "process_run, SoftwareApplication",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "hardware requirement",
@@ -558,7 +558,7 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   },
   {
     "label (source)": "category of method/workflow???",
@@ -569,6 +569,6 @@
     "required": "optional",
     "cff": "",
     "ro-crate": "",
-    "Bioschemas": false
+    "Bioschemas": ""
   }
 ]
