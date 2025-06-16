@@ -7,7 +7,7 @@
     "example": "https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations",
     "required": "mandatory",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -18,7 +18,7 @@
     "example": "https://zenodo.org/records/4555755",
     "required": "optional",
     "cff": "doi",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -29,7 +29,7 @@
     "example": "Magee, E.; Huxley, D.; Tso, C.-.M. (2023). Random forest model to predict long-term seasonal nitrate and orthophosphate concentrations in British river reaches. NERC EDS Environmental Information Data Centre. https://doi.org/10.5285/ba208b6c-6f1a-43b1-867d-bc1adaff6445",
     "required": "automatic",
     "cff": "preferred-citation",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -40,7 +40,7 @@
     "example": "https://www.opengis.net/def/crs/EPSG/0/4326",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -51,7 +51,7 @@
     "example": "https://ror.org/00pggkr55",
     "required": "mandatory",
     "cff": "contact",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -62,7 +62,7 @@
     "example": "https://orcid.org/0000-0002-6540-8547",
     "required": "optional",
     "cff": "authors",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -73,7 +73,7 @@
     "example": "https://orcid.org/0000-0002-6540-8547",
     "required": "optional",
     "cff": "authors",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -84,7 +84,7 @@
     "example": "2025-05-19",
     "required": "mandatory",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -95,7 +95,7 @@
     "example": "https://moisture-wqmlviewer.datalabs.ceh.ac.uk/wqml_viewer",
     "required": "optional",
     "cff": "url",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -106,7 +106,7 @@
     "example": "This R application is an implementation of state tagging approach for improved quality assurance of environmental data. The application returns state-dependent prediction intervals on input data. The states are determined based on clustering of auxiliary inputs (such as meteorological data) made on the same day. The method provides contextual information to assess the quality of observational data and is applicable to any point-based, daily time series observational data.",
     "required": "mandatory",
     "cff": "abstract",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -117,7 +117,7 @@
     "example": "",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -128,7 +128,7 @@
     "example": "https://ror.org/04xw4m193",
     "required": "mandatory",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -139,7 +139,7 @@
     "example": "https://ror.org/04xw4m193",
     "required": "mandatory",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -150,7 +150,7 @@
     "example": "https://www.opengis.net/def/crs/EPSG/0/4326",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -161,7 +161,7 @@
     "example": "https://doi.org/10.5285/44c577d3-665f-40de-adce-74ecad7b304a",
     "required": "automatic",
     "cff": "doi",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -172,7 +172,7 @@
     "example": "https://doi.org/10.3389/frwa.2023.1244024",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -183,7 +183,7 @@
     "example": "",
     "required": "optional",
     "cff": "keywords",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -194,7 +194,7 @@
     "example": "https://catalogue.ceh.ac.uk/documents/ba208b6c-6f1a-43b1-867d-bc1adaff6445",
     "required": "automatic",
     "cff": "url",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -205,7 +205,7 @@
     "example": "https://id.loc.gov/vocabulary/iso639-1.html",
     "required": "mandatory",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -216,7 +216,7 @@
     "example": "https://spdx.org/licenses/OGL-UK-3.0.ttl",
     "required": "mandatory",
     "cff": "license",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -227,7 +227,7 @@
     "example": "https://doi.org/10.5285/18b7c387-037d-4949-98bc-e8db5ef4264c",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -238,7 +238,7 @@
     "example": "https://ror.org/00pggkr55",
     "required": "automatic",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -249,7 +249,7 @@
     "example": "2025-05-19",
     "required": "automatic",
     "cff": "date-released",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -260,7 +260,7 @@
     "example": "https://doi.org/10.5285/18b7c387-037d-4949-98bc-e8db5ef4264c",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -271,7 +271,7 @@
     "example": "https://github.com/NERC-CEH/IDM_comparisons",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -282,7 +282,7 @@
     "example": "https://ror.org/01kj2bm70",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -293,7 +293,7 @@
     "example": "",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -304,7 +304,7 @@
     "example": "\u00a9 UK Centre for Ecology & Hydrology",
     "required": "optional",
     "cff": "reference.copyright",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -315,7 +315,7 @@
     "example": "2015",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -326,7 +326,7 @@
     "example": "raster",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -337,7 +337,7 @@
     "example": "30",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -348,7 +348,7 @@
     "example": "POLYGON((-8.648 49.864, -8.648 60.861, 1.768 60.861, 1.768 49.864, -8.648 49.864))",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -359,7 +359,7 @@
     "example": "superseded",
     "required": "automatic",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -370,7 +370,7 @@
     "example": "start: 2010-01-01, end: 2020-12-31",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -381,7 +381,7 @@
     "example": "PT1H",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -392,7 +392,7 @@
     "example": "",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -403,7 +403,7 @@
     "example": "State tagging application for environmental data quality assurance",
     "required": "mandatory",
     "cff": "title",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -414,7 +414,7 @@
     "example": "https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/climatologyMeteorologyAtmosphere",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -425,7 +425,7 @@
     "example": "",
     "required": "optional",
     "cff": "type (enum software/dataset)",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -436,7 +436,7 @@
     "example": "",
     "required": "automatic",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -447,7 +447,7 @@
     "example": "0.0.1",
     "required": "mandatory",
     "cff": "version",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -458,7 +458,7 @@
     "example": "This release replaces the previous version as it addresses localised issues with the source data (Met Office monthly rainfall grids) for the period 1960 to 2000.",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -469,7 +469,7 @@
     "example": "https://doi.org/10.5285/7115bc48-3ab0-475d-84ae-fd3126c20984",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -480,7 +480,7 @@
     "example": "",
     "required": "automatic",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -491,7 +491,7 @@
     "example": "https://doi.org/10.5285/7115bc48-3ab0-475d-84ae-fd3126c20984",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -513,7 +513,7 @@
     "example": "",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -535,7 +535,7 @@
     "example": "string",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -557,7 +557,7 @@
     "example": "GPU",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   },
   {
@@ -568,7 +568,7 @@
     "example": "",
     "required": "optional",
     "cff": "",
-    "ro-crate": false,
+    "ro-crate": "",
     "Bioschemas": false
   }
 ]
