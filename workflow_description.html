@@ -39,6 +39,7 @@
             <th class="px-4 py-3 border-b">Example</th>
             <th class="px-4 py-3 border-b">CFF</th>
             <th class="px-4 py-3 border-b">ROCrate</th>
+            <th class="px-4 py-3 border-b">Bioschemas</th>
           </tr>
         </thead>
         <tbody id="peopleTable" class="divide-y divide-gray-200">
@@ -75,6 +76,7 @@
               <td class="px-4 py-2 border-b">${person.example}</td>
               <td class="px-4 py-2 border-b">${person.cff}</td>
               <td class="px-4 py-2 border-b">${person["ro-crate"]}</td>
+              <td class="px-4 py-2 border-b">${person["Bioschemas"]}</td>
             </tr>`;
           tbody.innerHTML += row;
         });
