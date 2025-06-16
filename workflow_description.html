@@ -30,18 +30,18 @@
   </div>
 </div>
       <table class="w-full table-auto bg-white border border-gray-300 text-sm text-left">
-        <thead class="bg-gray-100 text-gray-700 uppercase">
-          <tr>
-            <th class="px-4 py-3 border-b">Label</th>
-            <th class="px-4 py-3 border-b">Cardinality</th>
-            <th class="px-4 py-3 border-b">Type</th>
-            <th class="px-4 py-3 border-b">Description</th>
-            <th class="px-4 py-3 border-b">Example</th>
-            <th class="px-4 py-3 border-b">CFF</th>
-            <th class="px-4 py-3 border-b">ROCrate</th>
-            <th class="px-4 py-3 border-b">Bioschemas</th>
-          </tr>
-        </thead>
+	<thead class="bg-gray-100 text-gray-700 uppercase">
+	  <tr>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="label (source)">Label</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="cardinality">Cardinality</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="type">Type</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="description">Description</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="example">Example</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="cff">CFF</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="ro-crate">ROCrate</th>
+	    <th class="px-4 py-3 border-b cursor-pointer" data-key="Bioschemas">Bioschemas</th>
+	  </tr>
+	</thead>
         <tbody id="peopleTable" class="divide-y divide-gray-200">
           <!-- Data rows will be injected here -->
         </tbody>
@@ -50,37 +50,56 @@
   </div>
 
   <script>
+    let tableData = [];
+    
+    function renderTable(data) {
+    const tbody = document.getElementById("peopleTable");
+    tbody.innerHTML = "";
+    data.forEach(person => {
+    let rowColor = "bg-gray-50";
+    switch (person.required) {
+    case "mandatory": rowColor = "bg-red-100 hover:bg-red-300"; break;
+    case "optional": rowColor = "bg-orange-100 hover:bg-orange-200"; break;
+    case "automatic": rowColor = "bg-green-100 hover:bg-green-200"; break;
+    }
+    
+    const row = `
+    <tr class="${rowColor}">
+      <td class="px-4 py-2 border-b">${person["label (source)"]}</td>
+      <td class="px-4 py-2 border-b">${person.cardinality}</td>
+      <td class="px-4 py-2 border-b">${person.type}</td>
+      <td class="px-4 py-2 border-b">${person.description}</td>
+      <td class="px-4 py-2 border-b">${person.example}</td>
+      <td class="px-4 py-2 border-b">${person.cff}</td>
+      <td class="px-4 py-2 border-b">${person["ro-crate"]}</td>
+      <td class="px-4 py-2 border-b">${person["Bioschemas"]}</td>
+    </tr>`;
+    tbody.innerHTML += row;
+    });
+    }
+    
+    // Load and render initial data
     fetch('workflow_description.json')
-      .then(response => response.json())
-      .then(data => {
-        const tbody = document.getElementById("peopleTable");
-        data.forEach(person => {
-          let rowColor = "bg-gray-50";
-          switch (person.required) {
-            case "mandatory":
-              rowColor = "bg-red-100 hover:bg-red-300";
-              break;
-            case "optional":
-              rowColor = "bg-orange-100 hover:bg-orange-200";
-              break;
-            case "automatic":
-              rowColor = "bg-green-100 hover:bg-green-200";
-              break;
-        }
-          const row = `
-            <tr class="${rowColor}">
-              <td class="px-4 py-2 border-b">${person["label (source)"]}</td>
-              <td class="px-4 py-2 border-b">${person.cardinality}</td>
-              <td class="px-4 py-2 border-b">${person.type}</td>
-              <td class="px-4 py-2 border-b">${person.description}</td>
-              <td class="px-4 py-2 border-b">${person.example}</td>
-              <td class="px-4 py-2 border-b">${person.cff}</td>
-              <td class="px-4 py-2 border-b">${person["ro-crate"]}</td>
-              <td class="px-4 py-2 border-b">${person["Bioschemas"]}</td>
-            </tr>`;
-          tbody.innerHTML += row;
-        });
-      });
+    .then(response => response.json())
+    .then(data => {
+    tableData = data;
+    renderTable(tableData);
+    });
+    
+    // Add sorting to headers
+    let sortOrder = 1;
+    document.querySelectorAll("th[data-key]").forEach(th => {
+    th.addEventListener("click", () => {
+    const key = th.getAttribute("data-key");
+    sortOrder *= -1;
+    tableData.sort((a, b) => {
+    const aVal = (a[key] || "").toString().toLowerCase();
+    const bVal = (b[key] || "").toString().toLowerCase();
+    return aVal.localeCompare(bVal) * sortOrder;
+    });
+      renderTable(tableData);
+    });
+    });
   </script>
 </body>
 </html>
